@@ -1,0 +1,11 @@
+name: PR Checklist & External Issue
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  checklist-and-issue:
+    if: github.event.repository.name != 'Workshop_Template'
+    uses: QLS-MiCM/MiCM_PR_Bot/.github/workflows/reusable_pr_check_issue_deploy.yml@main
+    secrets: inherit
