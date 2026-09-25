@@ -1,7 +1,9 @@
+# DO NOT CHANGE ANYTHING IN THIS WORKFLOW
+# NO actions/checkout CODE CAN BE USED HERE TO RETAIN REPO SECURITY
 name: PR Checklist & External Issue
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened]
 
 jobs:
